@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "373064222506",
+    "firebase_url": "https://friend-chat-udacity.firebaseio.com",
+    "project_id": "friend-chat-udacity",
+    "storage_bucket": "friend-chat-udacity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373064222506:android:bc6a359a74886ca9",
+        "android_client_info": {
+          "package_name": "mohamed14riad.friendchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373064222506-jna9vtaivp95bn29q9akq5212u938lk7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mohamed14riad.friendchat",
+            "certificate_hash": "e08e907d6d3294a8f84bee121ddbd3bc8bf0397f"
+          }
+        },
+        {
+          "client_id": "373064222506-6sfhc3lh0kmiv8f6q4ucqgh1uac1qjmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSojBquwgf2RfrO33sICpcR-28usA3GP0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373064222506-6sfhc3lh0kmiv8f6q4ucqgh1uac1qjmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

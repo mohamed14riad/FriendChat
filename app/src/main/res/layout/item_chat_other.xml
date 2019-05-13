@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/medium_padding"
+    android:layout_marginTop="@dimen/medium_padding"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/messageSenderImageView"
+        android:layout_width="@dimen/add_icon_dimen"
+        android:layout_height="@dimen/add_icon_dimen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/medium_padding"
+        android:contentDescription="@string/other_friend_image"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/messageTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/add_icon_dimen"
+        android:layout_marginStart="@dimen/medium_padding"
+        android:layout_toEndOf="@+id/messageSenderImageView"
+        android:background="@drawable/chat_rounded_rect_other"
+        android:padding="@dimen/medium_padding"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorBlack" />
+
+    <ImageView
+        android:id="@+id/messageImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/add_icon_dimen"
+        android:layout_marginStart="@dimen/medium_padding"
+        android:layout_toEndOf="@+id/messageSenderImageView"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_message"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>

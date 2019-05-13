@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ChatFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/medium_padding">
+
+            <ImageButton
+                android:id="@+id/imagesBtn"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="@dimen/add_icon_dimen"
+                android:layout_height="@dimen/add_icon_dimen"
+                android:layout_marginStart="@dimen/medium_padding"
+                android:background="@drawable/ic_camera"
+                android:contentDescription="@string/camera_icon" />
+
+            <EditText
+                android:id="@+id/chatEdtTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_padding"
+                android:layout_weight="1"
+                android:background="@drawable/message_rounded_rect"
+                android:hint="@string/type_a_message_hint"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:padding="@dimen/medium_padding"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack" />
+
+            <ImageButton
+                android:id="@+id/sendBtn"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="@dimen/add_icon_dimen"
+                android:layout_height="@dimen/add_icon_dimen"
+                android:layout_marginStart="@dimen/medium_padding"
+                android:background="@drawable/ic_send"
+                android:contentDescription="@string/send_message" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
